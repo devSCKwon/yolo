@@ -22,10 +22,6 @@ while cap.isOpened():
                 str="{0},{1:.2f}".format(model.names[int(result.boxes.cls)],result.boxes.conf[0])
                 cv2.putText(frame,str,(int(result.boxes.xyxy[0][0]), int(result.boxes.xyxy[0][1])),cv2.FONT_HERSHEY_SIMPLEX,1,(0,255,0),2)
 '''
-
-
-
-
         #print(results.boxes.conf)
 
         # seg image
